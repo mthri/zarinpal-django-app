@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>پرداخت با زرین پال</title>
+
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/vazir.css' %}" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        h1,
+        p,
+        input,
+        label,
+        button {
+            font-family: vazir;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'zarinpal/css/floating-labels.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <form class="form-signin" action="pay" method="POST">
+        {% csrf_token %}
+        <div class="text-center mb-4">
+            <img class="mb-4" src="{% static 'zarinpal/images/zarinpal.png' %}" alt="" width="300" height="72">
+            <!-- <h1 class="h3 mb-3 font-weight-normal">پرداختی امن</h1>
+            <p> با درگاه بانکی زرین پال </p> -->
+        </div>
+
+        <div class="form-label-group">
+            <input name="email" type="email" id="inputEmail" class="form-control text-right" placeholder="ایمیل" >
+            <label for="inputEmail" class="text-right">ایمیل</label>
+        </div>
+
+        <div class="form-label-group">
+            <input name="mobile" type="text" id="inputMobile" class="form-control text-right" placeholder="تلفن همراه" >
+            <label for="inputMobile" class="text-right">تلفن همراه</label>
+        </div>
+
+        <div class="form-label-group">
+            <input name="amount" type="text" id="inputCash" class="form-control text-right" placeholder="مبلغ (تومان)" required>
+            <label for="inputCash" class="text-right">مبلغ (تومان)</label>
+        </div>
+
+        <div class="form-group">
+            <label for="inputDescription" class="text-right float-right">:توضیحات</label>
+            <textarea name="description" id="inputDescription" class="form-control text-right" rows="4"></textarea>
+        </div>
+
+        <button class="btn btn-lg btn-success btn-block" type="submit">پرداخت</button>
+        <p class="mt-5 mb-3 text-muted text-center">&#127279; <a href="https://github.com/mthri"> mthri </a></p>
+    </form>
+
+</body>
+
+</html>

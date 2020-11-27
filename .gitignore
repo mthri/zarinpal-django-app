@@ -1,0 +1,5 @@
+db.sqlite3
+.vscode/
+PaymentGate/__pycache__
+zarinpal/__pycache__
+zarinpal/migrations

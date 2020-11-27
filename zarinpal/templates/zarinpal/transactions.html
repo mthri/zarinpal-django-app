@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراکنش ها</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/vazir.css' %}" rel="stylesheet">
+    <link href="{% static 'zarinpal/css/floating-labels.css' %}" rel="stylesheet">
+    <style>
+        * {
+            font-family: vazir;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">مبلغ</th>
+                    <th scope="col"> شماره پیگیری </th>
+                    <th scope="col">ایمیل</th>
+                    <th scope="col">تلفن همراه</th>
+                    <th scope="col">توضیحات</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <th>{{ transaction.amount }}</th>
+                    <td>{{ transaction.reference_id }}</td>
+                    <td>{{ transaction.email }}</td>
+                    <td>{{ transaction.mobile }}</td>
+                    <td>{{ transaction.description }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
