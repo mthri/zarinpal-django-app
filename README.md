@@ -34,3 +34,6 @@
 <img src='https://raw.githubusercontent.com/mthri/zarinpal-django-app/main/images/p3.png' />
 <img src='https://raw.githubusercontent.com/mthri/zarinpal-django-app/main/images/p1.png' />
 
+<p dir='rtl'>این اپ بر اساس <a href='https://github.com/Par3ae/Django-Zarinpal'> این پروژه </a> ایجاد شده است.</p>
+
+
