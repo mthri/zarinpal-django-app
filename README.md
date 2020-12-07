@@ -7,7 +7,7 @@
 <p dir='rtl'> برای استفاده از سیستم <a href='https://next.zarinpal.com/paymentGateway/sandbox.html'>Sandbox</a> کافی است از همین کد استفاده کنید.</p>
 
 <p dir='rtl'><strong>توجه:</strong></p>
-<p dir='rtl'> برای استفاده در محسز واقعی از  <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py'>این </a> درگاه باید <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py#L15'>merchand id</a> خود را وارد کنید و آدرس <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py#L16'>Callback url</a> خود را به درستی وارد کنید و در نهایت <code>sandbox=True</code> را برابر False قرار دهید یا کلا آن را حذف کنید.</p>
+<p dir='rtl'> برای استفاده در محیط واقعی از  <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py'>این </a> درگاه باید <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py#L15'>merchand id</a> خود را وارد کنید و آدرس <a href='https://github.com/mthri/zarinpal-django-app/blob/main/zarinpal/views.py#L16'>Callback url</a> خود را به درستی وارد کنید و در نهایت <code>sandbox=True</code> را برابر False قرار دهید یا کلا آن را حذف کنید.</p>
 
 <hr>
 
