@@ -38,7 +38,7 @@ class Zarinpal():
         # 100 means success
         if result.Status == 100:
             # convert to int and save value to self.authority
-            self.authority = int(result.Authority)
+            self.authority = result.Authority
             return self.WEB_GATE + str(self.authority) 
         else:
             self.__error_generator(result.Status)
